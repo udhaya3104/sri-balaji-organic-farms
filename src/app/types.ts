@@ -1,0 +1,10 @@
+export type RecordData={id:string;[key:string]:any};
+export type Workspace={user:RecordData;permissions:{view:string[];write:string[]};settings:RecordData;today:string;metrics:Record<string,number|null>;trend:RecordData[];[table:string]:any};
+export type Command=(action:string,payload:Record<string,any>,idempotencyKey?:string)=>Promise<RecordData>;
+export const rupees=(paise:number|null|undefined)=>paise==null?'Restricted':'₹'+(paise/100).toLocaleString('en-IN',{maximumFractionDigits:2});
+export const count=(v:number)=>Number(v||0).toLocaleString('en-IN');
+export const dateLabel=(v:string)=>v?new Date(v+'T12:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}):'—';
+export const amount=(v:any)=>Math.round(Number(v||0)*100);
+export const qty=(v:any)=>Number(v||0);
+export const initials=(s:string)=>(s||'').split(' ').map(x=>x[0]).slice(0,2).join('');
+export const labels:Record<string,string>={dashboard:'Dashboard',customers:'Customers',orders:'Orders',deliveries:'Deliveries',inventory:'Inventory',purchases:'Purchases',suppliers:'Suppliers',payments:'Payments & Outstanding',expenses:'Business Expenses','follow-ups':'Follow-ups',whatsapp:'WhatsApp Inbox',campaigns:'Campaigns',automations:'Automations',reports:'Reports & Analytics',staff:'Staff & Access',settings:'Settings'};

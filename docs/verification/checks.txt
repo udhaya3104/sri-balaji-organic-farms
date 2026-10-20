@@ -1,0 +1,81 @@
+
+> sai-balaji-crm@1.0.0 check
+> npm run typecheck && npm run lint && npm test && npm run build
+
+
+> sai-balaji-crm@1.0.0 typecheck
+> tsc --noEmit
+
+
+> sai-balaji-crm@1.0.0 lint
+> node scripts/check-source.ts
+
+Source hygiene: 13 TypeScript files checked; 0 errors. This is a targeted hygiene check; semantic/syntax checking is npm run typecheck.
+
+> sai-balaji-crm@1.0.0 test
+> node --test tests/*.test.ts
+
+(node:27216) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ A: 600 eggs at ₹6.50 reserve 600, invoice ₹3,900, queue confirmation, update customer history (44.5949ms)
+✔ B: partial payment against ₹10,000 invoice leaves ₹6,000 and a traceable allocation (9.8379ms)
+✔ C: one trip contains three independent order stops and proofs (19.1303ms)
+✔ D: deliver 600 of 900, return and reserve 300; no double stock deduction (15.4802ms)
+✔ E: purchase of 3000, accepted receipt 2400 leaves 600 open and creates no assumed payable (6.4634ms)
+✔ F: supplier bill ₹20,000 minus ₹8,000 payment leaves ₹12,000 payable; stock unchanged (6.4937ms)
+✔ G: reorder due after seven days; deduplication, pending-order suppression and reset (24.675ms)
+✔ H: damaged return records quarantine, does not restore saleable stock, credit requires approval (16.2096ms)
+✔ I: actual parallel processes cannot oversell a shared SQLite warehouse (372.1054ms)
+✔ J: warehouse cannot mutate payments; accountant can post and audit (6.3791ms)
+✔ K: three driver cash collections stay pending then reconcile exactly once (22.322ms)
+✔ L: cancel after partial dispatch retains 600 delivered, releases 300 and credits only cancelled value (12.5743ms)
+✔ Money validation, multiple products, discounts, tax and tray snapshots (5.596ms)
+✔ Draft confirmation and cancellation; credit rules roll back all writes (10.7379ms)
+✔ Advances, cross-customer allocation and payment reversals (7.2198ms)
+✔ Idempotency prevents duplicate money and rejects key misuse (4.8361ms)
+✔ Consent, STOP simulation, campaign segmentation, delivery states and duplicate run protection (6.927ms)
+✔ Receipt over-receiving, adjustments, transfer and immutable movement/audit triggers (7.1051ms)
+✔ Last owner protection, duplicate normalized phone, archive keeps history (5.8115ms)
+✔ Foreign keys enforce relational references and report date filters derive exact totals (9.6604ms)
+(node:7084) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"level":"info","event":"request_failed","path":"/api/workspace","status":401,"message":"Session expired. Please sign in again"}
+{"level":"info","event":"request_failed","path":"/api/commands","status":403,"message":"Security token invalid. Reload and try again"}
+{"level":"info","event":"request_failed","path":"/api/commands","status":403,"message":"Cross-origin request blocked"}
+{"level":"info","event":"request_failed","path":"/api/commands","status":403,"message":"Access denied for this role"}
+{"level":"info","event":"request_failed","path":"/api/workspace","status":403,"message":"Access denied"}
+{"level":"info","event":"request_failed","path":"/api/export","status":403,"message":"Export access denied"}
+{"level":"info","event":"request_failed","path":"/api/commands","status":403,"message":"Access denied for this role"}
+{"level":"info","event":"request_failed","path":"/api/workspace","status":401,"message":"Session expired. Please sign in again"}
+✔ HTTP workflow: session, CSRF, create customer/order/payment, export, deep data and role denial (2443.8962ms)
+{"level":"info","event":"request_failed","path":"/api/bootstrap","status":401,"message":"Sign in to continue"}
+{"level":"info","event":"request_failed","path":"/api/login","status":401,"message":"Invalid credentials"}
+{"level":"info","event":"request_failed","path":"/api/demo/switch","status":403,"message":"Demo switching is disabled"}
+✔ Password-mode authentication does not offer automatic sessions or demo role switching (1345.7586ms)
+(node:30144) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ History-based reorder interval uses completed order cadence and configured manual override (1307.0315ms)
+✔ Seeded prototype reconciles: 30 customers, 120+ orders, exact payments, stocks and historical fulfillment (1401.9826ms)
+✔ Controlled revision preserves finalized original, releases its reservation and creates a new invoice (1021.6278ms)
+✔ Master data persists without mutating historical defaults, and out-of-range quiet hours fail (1924.7185ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6011.198
+
+> sai-balaji-crm@1.0.0 build
+> vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 1582 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.49 kB │ gzip:   0.33 kB
+dist/assets/index-Ujtm8dGL.css   69.72 kB │ gzip:  15.60 kB
+dist/assets/index-DV_iP8Ci.js   339.79 kB │ gzip: 101.12 kB
+✓ built in 2.68s

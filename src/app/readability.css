@@ -1,0 +1,174 @@
+/* Workspace typography upgrade. Sidebar and dark drawer header keep their theme. */
+.main-workspace { color:#151515; }
+.main-workspace main :is(p,small,label,th,td,b,strong),
+.drawer-content :is(p,small,label,b,strong) { color:#181818!important; }
+.main-workspace main :is(p,small),.drawer-content :is(p,small) { font-weight:550; }
+.main-workspace h1 { font-size:34px; font-weight:750; color:#101010; }
+.main-workspace h2,.drawer-content h2 { font-size:20px; font-weight:700; color:#111; }
+.main-workspace h3,.drawer-content h3 { font-size:17px; font-weight:700; color:#111!important; }
+.main-workspace .page-banner p { font-size:15px; line-height:1.85; }
+.main-workspace .breadcrumb { font-size:12px; color:#333; font-weight:600; }
+.main-workspace .metric-copy>small { font-size:13px; font-weight:650; white-space:normal; }
+.main-workspace .metric-copy>strong { font-size:29px; font-weight:750; line-height:1.3; }
+.main-workspace .metric-copy>span { font-size:12px; color:#333; font-weight:550; line-height:1.65; }
+.main-workspace .metric { min-height:116px; }
+.main-workspace .metric-copy { overflow-wrap:anywhere; }
+.main-workspace .metric-copy>strong em { font-size:14px; }
+.main-workspace .card-head h2 { font-size:19px; font-weight:700; }
+.main-workspace .card-head p,.main-workspace .card-foot-note { font-size:13px; line-height:1.8; color:#292929; font-weight:550; }
+.main-workspace .button,.drawer-content .button { font-size:14px; font-weight:650; min-height:40px; padding:10px 13px; }
+.main-workspace .button:not(.primary),.drawer-content .button:not(.primary) { color:#161616; }
+.main-workspace .button.primary,.drawer-content .button.primary { color:#fff; }
+.main-workspace .card-head .button.primary { background:linear-gradient(115deg,#68412b,#422a1e); border-color:#6d4830; color:#fff; }
+.main-workspace .button.primary :is(span,small,b,strong),.drawer-content .button.primary :is(span,small,b,strong) { color:#fff!important; }
+.main-workspace :is(input,select,textarea),.drawer-content :is(input,select,textarea) { font-size:15px; color:#151515; font-weight:550; }
+.main-workspace input::placeholder,.drawer-content input::placeholder { color:#686868; font-weight:400; }
+.main-workspace .global-search input { font-size:14px; }
+.main-workspace .header-date,.main-workspace .header-location { font-size:12px; color:#171717; font-weight:600; }
+.main-workspace .owner-profile select { font-size:13px; color:#111; }
+.main-workspace .owner-profile small { font-size:10px; color:#373737; }
+.main-workspace .prototype-label { font-size:11px; color:#333; font-weight:600; }
+.main-workspace .prototype-label>span { font-size:11px; color:#333; }
+.main-workspace .date-controls select { font-size:13px; color:#111; min-height:38px; }
+.main-workspace .search-field input { font-size:14px; }
+.main-workspace .filter-bar>select,.main-workspace .card-head>select { font-size:13px; color:#111; min-height:38px; }
+.main-workspace th,.main-workspace th>button { font-size:12px; color:#222; font-weight:700; }
+.main-workspace td { font-size:14px; line-height:1.7; padding-block:17px; font-weight:550; }
+.main-workspace td :is(b,strong),.main-workspace .person-cell b { font-size:14px; font-weight:650; }
+.main-workspace td small,.main-workspace .person-cell small { font-size:12px; line-height:1.6; }
+.main-workspace .status,.drawer-content .status { font-size:12px; font-weight:650; color:#222; }
+.main-workspace .pagination { font-size:12px; color:#333; }
+.main-workspace .pagination>div>span { font-size:12px; color:#222; }
+.main-workspace .chart-summary { flex-wrap:wrap; gap:10px; }
+.main-workspace .chart-summary>strong { font-size:28px; }
+.main-workspace .chart-summary>span { font-size:12px; color:#222; font-weight:550; }
+.main-workspace .chart-axis { font-size:11px; color:#333; min-width:54px; }
+.main-workspace .chart-day>span { font-size:10px; color:#222; font-weight:550; }
+.main-workspace .ring-layout { flex-wrap:wrap; }
+.main-workspace .ring-legend { min-width:120px; }
+.main-workspace .ring-legend button { font-size:12px; color:#171717; font-weight:600; }
+.main-workspace .ring-legend button b { font-size:14px; }
+.main-workspace .ring strong { font-size:30px; }
+.main-workspace .ring small { font-size:12px; }
+.main-workspace .schedule-list :is(b,small),.main-workspace .schedule-time { font-size:12px; color:#222; line-height:1.7; }
+.main-workspace .schedule-list .status { font-size:10px; }
+.main-workspace .rankings b,.main-workspace .rankings strong { font-size:12px; }
+.main-workspace .collection-stat { font-size:12px; color:#111; }
+.main-workspace .collection-stat strong { font-size:17px; }
+.main-workspace .low-stock b,.main-workspace .low-stock strong { font-size:13px; }
+.main-workspace .mini-ledger>button { font-size:12px; color:#222; }
+.main-workspace .mini-ledger b,.main-workspace .mini-ledger strong { font-size:12px; }
+.main-workspace .mini-ledger small { font-size:11px; }
+.main-workspace .mini-ledger .status { font-size:10px; }
+.main-workspace .due-list b,.main-workspace .due-list strong { font-size:12px; }
+.main-workspace .due-list small { font-size:11px; }
+.main-workspace .retention-number span { font-size:14px; color:#222; }
+.main-workspace .retention-card>p { font-size:13px; }
+.main-workspace .pulse-grid small,.main-workspace .activity-list small { font-size:12px; }
+.main-workspace .pulse-grid b { font-size:22px; }
+.main-workspace .activity-list b { font-size:13px; }
+.main-workspace .trip-list b,.main-workspace .trip-profile b,.main-workspace .stop-list b { font-size:14px; }
+.main-workspace .trip-list small,.main-workspace .trip-profile small,.main-workspace .stop-list small { font-size:12px; }
+.main-workspace .trip-list button>div>span,.main-workspace .stop-list>div>div>span { font-size:12px; color:#222; }
+.main-workspace .tabs button { font-size:13px; font-weight:600; color:#222; }
+.main-workspace .tabs button.active { color:#fff; }
+.main-workspace .simulation-banner { font-size:13px; color:#333; }
+.main-workspace .definition-list :is(b,strong),.main-workspace .context-tiles b { font-size:15px; }
+.main-workspace .definition-list small,.main-workspace .context-tiles small { font-size:13px; }
+.main-workspace .explain,.main-workspace .explain p,.main-workspace .integration-list p { font-size:14px; }
+.main-workspace .conversation-list b,.main-workspace .chat-title b { font-size:13px; }
+.main-workspace .conversation-list small,.main-workspace .chat-title small { font-size:11px; }
+.main-workspace .message-bubble p { font-size:15px; }
+.main-workspace .message-bubble small { font-size:11px; }
+.main-workspace .message-bubble select { font-size:11px; color:#222; }
+.main-workspace .automation-rule p,.main-workspace .campaign-copy p { font-size:15px; }
+.main-workspace .automation-rule>small,.main-workspace .campaign-copy small { font-size:12px; }
+.main-workspace .automation-steps span { font-size:12px; color:#222; font-weight:600; }
+.drawer { width:560px; }
+.drawer-head h2 { font-size:25px; font-weight:650; }
+.drawer-head small { font-size:10px; color:#f3dfc6; }
+.drawer-head .icon-button { background:#ffffff10; color:#fff; }
+.drawer-head .icon-button:hover { background:#ffffff25; color:#fff; }
+.drawer-content { color:#111; }
+.drawer-content .field { font-size:14px; font-weight:650; color:#111; }
+.drawer-content .field>span { color:#111; }
+.drawer-content .field :is(input,select,textarea) { font-size:16px; min-height:47px; color:#111; }
+.drawer-content .select-trigger { font-size:15px; min-height:47px; color:#111; font-weight:600; }
+.drawer-content .select-trigger .placeholder { font-size:15px; color:#555; }
+.drawer-content .select-options>button { font-size:15px; color:#111; }
+.drawer-content .select-trigger small,.drawer-content .select-options small { font-size:12px; }
+.drawer-content .form-help,.drawer-content .check-field { font-size:14px; line-height:1.9; color:#222; }
+.drawer-content .form-section-title h3 { font-size:17px; }
+.drawer-content .form-section-title>small { font-size:12px; }
+.drawer-content .context-strip>span { font-size:12px; color:#222; font-weight:600; }
+.drawer-content .context-strip b { font-size:17px; font-weight:700; }
+.drawer-content .line-editor-top { font-size:13px; color:#222; font-weight:650; }
+.drawer-content .line-editor .field>span { font-size:14px; }
+.drawer-content .line-total small { font-size:12px; }
+.drawer-content .line-total b { font-size:17px; }
+.drawer-content .form-total { font-size:15px; color:#111; }
+.drawer-content .form-total strong { font-size:24px; }
+.drawer-content .detail-items p { font-size:14px; }
+.drawer-content .person-cell b { font-size:17px; }
+.drawer-content .person-cell small { font-size:13px; }
+.drawer-content .detail-contact p { font-size:15px; }
+.drawer-content .invoice-summary h3 { font-size:18px; }
+.drawer-content .invoice-summary>div { font-size:16px; color:#151515; line-height:1.8; }
+.drawer-content .invoice-summary>div:last-of-type { font-size:20px; }
+.drawer-content .invoice-summary>div b { font-weight:700; }
+.drawer-content .context-tiles small { font-size:12px; }
+.drawer-content .context-tiles b { font-size:17px; }
+.drawer-content .detail-list>button,.drawer-content .detail-list>div { font-size:14px; color:#222; }
+.drawer-content .detail-list b { font-size:15px; }
+.drawer-content .trip-allocation b { font-size:14px; }
+.drawer-content .trip-allocation small { font-size:12px; }
+.drawer-content .trip-allocation input { font-size:17px; }
+.drawer-content .form-actions .button { font-size:15px; min-height:47px; }
+.payment-preview { padding:20px; border:1px solid #d5c4ac; background:#fff8eb; border-radius:10px; margin:0 0 22px; }
+.payment-preview h3 { margin-bottom:13px; }
+.payment-preview>div { display:flex; justify-content:space-between; gap:16px; padding:8px 0; font-size:14px; color:#111; }
+.payment-preview>div b { font-weight:700; }
+.payment-preview-balance { border-top:1px solid #d5c4ac; margin-top:8px; padding-top:15px!important; align-items:center; font-weight:700; }
+.payment-preview-balance strong { font-size:24px; }
+.payment-preview p { font-size:13px; margin-top:12px; line-height:1.8; }
+@media(max-width:1400px) and (min-width:801px){
+ .main-workspace .metric-grid.five { grid-template-columns:repeat(3,minmax(0,1fr)); }
+ .main-workspace .metric-grid.four { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .main-workspace .dashboard-grid { grid-template-columns:1.25fr 1fr; }
+ .main-workspace .dashboard-grid>.card:nth-child(3){ grid-column:1/-1; }
+ .main-workspace .schedule-list { display:flex; gap:22px; flex-wrap:wrap; }
+ .main-workspace .schedule-list>button { flex:1; min-width:260px; }
+ .main-workspace .chart-summary>span { font-size:12px; }
+ .main-workspace .rankings b,.main-workspace .rankings strong { font-size:13px; }
+ .main-workspace .dashboard-bottom { grid-template-columns:1.3fr 1fr; }
+ .main-workspace .retention-card { grid-column:1/-1; }
+}
+@media(max-width:800px){
+ .main-workspace h1 { font-size:30px; }
+ .main-workspace .page-banner p { font-size:14px; }
+ .main-workspace .metric-copy>strong { font-size:25px; }
+ .main-workspace .metric-copy>small { font-size:12px; }
+ .main-workspace .metric-copy>span { font-size:11px; }
+ .main-workspace .metric { gap:8px; padding:14px 11px; min-height:112px; }
+ .main-workspace .metric { display:block; min-height:137px; }
+ .main-workspace .metric-icon { position:absolute; right:11px; top:13px; }
+ .main-workspace .metric-copy>small { max-width:calc(100% - 38px); min-height:34px; }
+ .main-workspace .metric-copy>strong { margin-top:11px; white-space:normal; overflow-wrap:normal; }
+ .main-workspace .metric-grid.five>.metric:last-child .metric-copy { display:block; }
+ .main-workspace .metric-grid.five>.metric:last-child .metric-copy>span { margin-top:6px; }
+ .main-workspace .metric-icon { width:31px; height:36px; }
+ .main-workspace .metric-grid.five>.metric:last-child .metric-copy>small { font-size:13px; }
+ .main-workspace .metric-grid.five>.metric:last-child .metric-copy>span { font-size:11px; margin-top:0; padding-left:0; }
+ .main-workspace .card-head h2 { font-size:18px; }
+ .main-workspace .global-search input { font-size:12px; }
+ .main-workspace td,.main-workspace td :is(b,strong),.main-workspace .person-cell b { font-size:14px; }
+ .main-workspace td::before { font-size:12px; color:#333; font-weight:600; }
+ .main-workspace .person-cell small,.main-workspace td small { font-size:12px; }
+ .main-workspace .date-controls select { min-width:130px; font-size:13px; }
+ .main-workspace .prototype-label,.main-workspace .prototype-label>span { font-size:10px; }
+ .drawer,.drawer.wide { width:100%; }
+ .drawer-content .field-grid .field>span { font-size:13px; }
+ .drawer-content .form-actions .button { font-size:14px; }
+ .drawer-content .invoice-summary>div { font-size:15px; }
+ .main-workspace .chart-summary>span { font-size:11px; }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "page": "Orders",
+    "heading": "Orders",
+    "error": false
+  },
+  {
+    "page": "Deliveries",
+    "heading": "Deliveries",
+    "error": false
+  },
+  {
+    "page": "Inventory",
+    "heading": "Inventory",
+    "error": false
+  },
+  {
+    "page": "Purchases",
+    "heading": "Purchases",
+    "error": false
+  },
+  {
+    "page": "Suppliers",
+    "heading": "Suppliers",
+    "error": false
+  },
+  {
+    "page": "Payments & Outstanding",
+    "heading": "Payments & Outstanding",
+    "error": false
+  },
+  {
+    "page": "Business Expenses",
+    "heading": "Business Expenses",
+    "error": false
+  },
+  {
+    "page": "Follow-ups",
+    "heading": "Follow-ups",
+    "error": false
+  },
+  {
+    "page": "WhatsApp Inbox",
+    "heading": "WhatsApp Inbox",
+    "error": false
+  },
+  {
+    "page": "Campaigns",
+    "heading": "Campaigns",
+    "error": false
+  },
+  {
+    "page": "Automations",
+    "heading": "Automations",
+    "error": false
+  },
+  {
+    "page": "Reports & Analytics",
+    "heading": "Reports & Analytics",
+    "error": false
+  },
+  {
+    "page": "Staff & Access",
+    "heading": "Staff & Access",
+    "error": false
+  },
+  {
+    "page": "Settings",
+    "heading": "Settings",
+    "error": false
+  },
+  {
+    "page": "Customers",
+    "heading": "Customers",
+    "error": false
+  },
+  {
+    "page": "Dashboard",
+    "heading": "Good Afternoon, Anandaraj👋",
+    "error": false
+  }
+]

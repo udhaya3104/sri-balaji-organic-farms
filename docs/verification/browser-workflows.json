@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-20",
+  "mode": "Connected browser automation, local prototype",
+  "customer": "QA Scenario Mart (fictional)",
+  "steps": [
+    {
+      "operation": "Create customer",
+      "result": "Saved; customer count 30 to 31"
+    },
+    {
+      "operation": "Confirm order",
+      "eggs": 600,
+      "invoiceRupees": 3900,
+      "number": "SO-1127"
+    },
+    {
+      "operation": "Partial receipt",
+      "receivedRupees": 1000,
+      "remainingRupees": 2900
+    },
+    {
+      "operation": "Dispatch",
+      "trip": "TR-003",
+      "driver": "Murugan",
+      "eggs": 600
+    },
+    {
+      "operation": "Partial delivery",
+      "delivered": 450,
+      "returnedAndReserved": 150
+    },
+    {
+      "operation": "Permission test",
+      "role": "Warehouse Staff",
+      "directFinanceURL": "Access denied"
+    },
+    {
+      "operation": "Mobile viewport",
+      "width": 390,
+      "checks": [
+        "Bottom Orders tab",
+        "Create form opens",
+        "Full-screen drawer closes"
+      ]
+    },
+    {
+      "operation": "Compiled server",
+      "url": "http://localhost:3000/dashboard",
+      "result": "Loaded production bundle"
+    }
+  ]
+}
